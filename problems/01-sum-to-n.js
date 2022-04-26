@@ -17,6 +17,8 @@ let sumToN = function (num) {
 
   if (num < 0) return null;
 
+  if (num === 1) return 1;
+
   return num + sumToN(num - 1);
 }
 
